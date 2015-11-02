@@ -304,7 +304,7 @@
     </script>
     <!-- alert-success -->
 
-    // If there is error, the modal will be trigger.
+    <!--If there is error, the modal will be trigger.-->
     @if($errors->all())
       <script>
         $(function() {
