@@ -55,10 +55,10 @@
                   
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Username">
+                        <input type="text" class="form-control" placeholder="">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Password">
+                        <input type="text" class="form-control" placeholder="">
                     </div>
                     <button type="submit" class="login">Login</button>
                 </form> 
@@ -77,10 +77,15 @@
 
     <header>
         <div class="fullscreen-bg">
-          <video autoplay loop poster="img/header.png" id="ytplayer">
+          <video autoplay loop poster="img/header.jpg" id="ytplayer">
+            <source src="video/background.webm" type="video/webm">
+            <source src="video/background.mp4" type="video/mp4">
+            <source src="video/background.ogv" type="video/ogg"/>
+<!--
             <source src="video/497230027_p1.webm" type="video/webm">
             <source src="video/497230027_p1.mp4" type="video/mp4">
             <source src="video/497230027_p1.ogv" type="video/ogg"/>
+-->
           </video>
         </div>
         <div class="header-content">
