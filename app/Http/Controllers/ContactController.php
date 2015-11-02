@@ -30,8 +30,11 @@ class ContactController extends Controller
         ]);
 
         if ($validator->fails()) {
+    /*
              \Session::flash('flash_message', 'Your message not has been sent!');
             return redirect('/')
+    */
+            return back()
                         ->withErrors($validator)
                         ->withInput();
         }
@@ -40,7 +43,10 @@ class ContactController extends Controller
             $message->to('cezar@index.io')->subject('Message qnetwork-web'); 
         }); 
         \Session::flash('flash_message', 'Your message has been sent!');
+        return back();
+    /*
         return redirect('/');
+    */
     }
 
     /**

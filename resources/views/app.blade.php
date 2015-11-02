@@ -98,7 +98,6 @@
                      @if (Session::has('flash_message_important'))
                           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                      @endif
-              
                      {{ Session::get('flash_message')}} 
                  </div>
                  @endif
@@ -149,7 +148,7 @@
     </section>
 
   <!-- Try Index Modal -->
-  <div class="modal fade" id="tryIndexModal" role="dialog">
+  <div class="modal fade" id="tryIndexModal" tabindex="-1" role="form" aria-hidden="false">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -177,14 +176,13 @@
             </div>
             @if ($errors->has('message')) <p class="help-block">{{ $errors->first('message') }}</p> @endif
             </div>
-
-            <div class="form-group pull-right"> 
-                <button type="submit" class="button-send form-control">Send</button>   
-            </div>
-            {!! Form::close() !!}
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+          <div class="form-group pull-right"> 
+                <button type="submit" class="button-send btn-default form-control">Send</button>   
+          </div>
+          {!! Form::close() !!}
         </div>
       </div>
     </div>
@@ -305,6 +303,15 @@
       $('div.alert').not('.alert-important').delay(4000).slideUp(300);
     </script>
     <!-- alert-success -->
+
+    // If there is error, the modal will be trigger.
+    @if($errors->all())
+      <script>
+        $(function() {
+            $('#tryIndexModal').modal('show');
+        });
+      </script>
+    @endif
     
 </body>
 
