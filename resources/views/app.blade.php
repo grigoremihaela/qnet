@@ -53,15 +53,7 @@
                     <li><a href="#" data-toggle="modal" data-target="#privacyModal">Privacy Policy</a></li>
                 </ul>
                   
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="">
-                    </div>
-                    <button type="submit" class="login">Login</button>
-                </form> 
+                
                 <ul class="nav navbar-nav navbar-right">
                     <li><div style="margin-top:7px; padding-left: 15px; padding-bottom:2px;">
                       <a href="#" data-toggle="modal" data-target="#tryIndexModal">
