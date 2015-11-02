@@ -30,7 +30,7 @@ class ContactController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect('/#contact')
+            return redirect('/')
                         ->withErrors($validator)
                         ->withInput();
         }
