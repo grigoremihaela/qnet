@@ -30,7 +30,7 @@ class ContactController extends Controller
         ]);
 
         if ($validator->fails()) {
-            \Session::flash('flash_message', 'Your message not has been sent!');
+             \Session::flash('flash_message', 'Your message not has been sent!');
             return redirect('/')
                         ->withErrors($validator)
                         ->withInput();

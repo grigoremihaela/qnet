@@ -92,8 +92,9 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <div class="header-content">
+                <p>
                  @if (Session::has('flash_message'))
-                 <div class="alert alert-success {{ Session::has('flash_message') ? 'alert' : ''}}" style="width:50%;">
+                 <div class="alert alert-success {{ Session::has('flash_message') ? 'alert' : ''}}" style="width:50%; margin-left:7%;">
                      @if (Session::has('flash_message_important'))
                           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                      @endif
@@ -101,6 +102,7 @@
                      {{ Session::get('flash_message')}} 
                  </div>
                  @endif
+                 </p>
                 <h1>Professional</h1>
                 <h1>Relationships,</h1>
                 <h1>Organised</h1>
