@@ -212,7 +212,7 @@ section {
 }
 @media (max-width: 991px) {
     header {
-      background-image: url(../img/header.jpg);
+      background-image: url('/img/header.jpg');
       background-position: center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -232,7 +232,7 @@ section {
    left: 0;
    overflow: hidden;
    z-index: -1200;
-   background:transparent url(../img/header.jpg); 
+   background:transparent url('/img/header.jpg'); 
    -webkit-background-size:cover; 
    -moz-background-size:cover; 
    -o-background-size:cover; 
@@ -259,7 +259,7 @@ header {
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 50px 15px;
     text-align: left;
 }
 
@@ -342,7 +342,7 @@ header .header-content .header-content-inner p {
     min-height: 100%;
     height: auto;
     width: auto;
-    background-image: url(../img/page.jpg);
+    background-image: url('/img/page.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
